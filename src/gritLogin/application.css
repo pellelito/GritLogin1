@@ -1,0 +1,25 @@
+.root
+{
+    -fx-background-color: grey;
+    -fx-background-image: url("https://gritacademy.se/wp-content/uploads/2020/06/104660330_2742386595873196_6423522495776104405_o-954x675.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-position: top center;
+    
+}
+.button {
+    -fx-text-fill: white;
+    -fx-background-color: #9A7D0A ;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px ;
+    -fx-padding: 10px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+    
+    
+}
+.button:hover{
+	-fx-opacity: 0.5;
+}
+.button:focused{
+	-fx-opacity: 0.5;
+}
