@@ -1,5 +1,7 @@
 package gritLogin;
 
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsEnvironment;
 import java.io.IOException;
 
 import javafx.application.Application;
@@ -19,14 +21,20 @@ import javafx.stage.Stage;
 public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
+		GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
+		int width = (int) ((gd.getDisplayMode().getWidth())*0.6);
+		int height = (int) ((gd.getDisplayMode().getHeight())*0.75);
+		
 		TilePane root = new TilePane();
-		Scene scene = new Scene(root, 400, 820);
+		Scene scene = new Scene(root, width, height);
 		Button login = new Button("Login");
 		Button cancel = new Button("Cancel");
 		Button register = new Button("Register");
 		TextField user = new TextField("username");
 		PasswordField passw = new PasswordField();
 		Label label = new Label("Login");
+		root.setStyle("-fx-background-size: cover;");
+		
 		
 		try {
 			//create form___________________________________________

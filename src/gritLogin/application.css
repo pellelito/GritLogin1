@@ -4,6 +4,7 @@
     -fx-background-image: url("https://gritacademy.se/wp-content/uploads/2020/06/104660330_2742386595873196_6423522495776104405_o-954x675.jpg");
     -fx-background-repeat: stretch;   
     -fx-background-position: top center;
+    -fx-padding:20px;
     
 }
 .button {
